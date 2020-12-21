@@ -2,12 +2,12 @@ const jwt = require('jsonwebtoken');
 const config = require('config');
 
 module.exports = (req,res,next)=>{
-    //Get token fromm header
-   const token = req.header('x-auth-token');
+    //Get token from header
+   const token = req.header('x-auth-token');    
 
    //Check if not token
     if(!token){
-        res.status(401).json({message:'No token, authorization denied.'})
+     return  res.status(401).json({message:'No token, authorization denied.'})
     }
     //Verify token
     try{
