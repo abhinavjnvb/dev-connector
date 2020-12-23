@@ -6,6 +6,7 @@ const User = require('../../Models/User');
 const gravatar = require('gravatar');
 const jwt = require('jsonwebtoken');
 const config = require('config');
+
 // @route POST api/users
 // @desc  Test route
 // @access Public
