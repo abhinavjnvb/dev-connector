@@ -27,7 +27,7 @@ const profileSchema = mongoose.Schema({
     githubusername:{
         type:String
     },
-    experiences:[
+    experience:[
         {
             title:{
                 type:String,
@@ -45,8 +45,7 @@ const profileSchema = mongoose.Schema({
                 required:true
             },
             to:{
-                type:Date,
-                required:true
+                type:Date
             },
             current:{
                 type:Boolean,
@@ -76,7 +75,7 @@ const profileSchema = mongoose.Schema({
             },
             to:{
                 type:Date,
-                required:true
+                // required:true
             },
             current:{
                 type:Boolean,
